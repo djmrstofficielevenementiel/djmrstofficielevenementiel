@@ -24,3 +24,15 @@ function switchTab(tabName) {
         tabButtons[1].classList.add('active');
     }
 }
+
+function scrollToSection(event, sectionId) {
+    event.preventDefault();
+
+    const section = document.querySelector(sectionId);
+
+    if (section) {
+        section.scrollIntoView({
+            behavior: "smooth"
+        });
+    }
+}
