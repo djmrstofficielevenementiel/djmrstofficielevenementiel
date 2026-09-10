@@ -362,7 +362,7 @@ button {
     position: absolute;
     inset: 0;
     background-image: url('assets/DJ-Steeve-29.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center 50%;
     z-index: 0;
 }
