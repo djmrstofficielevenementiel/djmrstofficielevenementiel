@@ -364,6 +364,7 @@ button {
     background-image: url('assets/DJ-Steeve-29.jpg');
     background-size: contain;
     background-position: center 50%;
+    background-repeat: no-repeat;
     z-index: 0;
 }
 
