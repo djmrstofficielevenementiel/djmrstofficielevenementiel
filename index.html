@@ -650,6 +650,151 @@
 
             </div>
 
+
+            <!-- Formulaire de témoignage -->
+            <div class="contact-form-container testimonial-form-container">
+
+                <h3 class="gradient-electric">
+                    Laisser un témoignage
+                </h3>
+
+                <p class="section-description">
+                    Vous avez apprécié votre expérience avec DJ NAYVORA X ?
+                    Partagez votre avis.
+                </p>
+
+
+                <form action="https://api.web3forms.com/submit"
+                      method="POST"
+                      class="contact-form">
+
+                    <!-- Web3Forms -->
+                    <input type="hidden"
+                           name="access_key"
+                           value="e5126768-d0cc-4723-87a5-53258b103db4">
+
+                    <input type="hidden"
+                           name="subject"
+                           value="Nouveau témoignage - DJ NAYVORA X">
+
+
+                    <!-- Nom -->
+                    <div class="form-group">
+
+                        <label for="testimonial-name">
+                            Prénom / Nom *
+                        </label>
+
+                        <input type="text"
+                               id="testimonial-name"
+                               name="nom"
+                               placeholder="Votre prénom et nom"
+                               required>
+
+                    </div>
+
+
+                    <!-- Établissement -->
+                    <div class="form-group">
+
+                        <label for="testimonial-establishment">
+                            Établissement
+                        </label>
+
+                        <input type="text"
+                               id="testimonial-establishment"
+                               name="etablissement"
+                               placeholder="Nom de votre établissement (facultatif)">
+
+                    </div>
+
+
+                    <!-- Note -->
+                    <div class="form-group">
+
+                        <label for="testimonial-rating">
+                            Votre note *
+                        </label>
+
+                        <select id="testimonial-rating"
+                                name="note"
+                                required>
+
+                            <option value="">
+                                Sélectionnez une note
+                            </option>
+
+                            <option value="5 étoiles">
+                                ★★★★★ — 5 étoiles
+                            </option>
+
+                            <option value="4 étoiles">
+                                ★★★★☆ — 4 étoiles
+                            </option>
+
+                            <option value="3 étoiles">
+                                ★★★☆☆ — 3 étoiles
+                            </option>
+
+                            <option value="2 étoiles">
+                                ★★☆☆☆ — 2 étoiles
+                            </option>
+
+                            <option value="1 étoile">
+                                ★☆☆☆☆ — 1 étoile
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Témoignage -->
+                    <div class="form-group">
+
+                        <label for="testimonial-message">
+                            Votre témoignage *
+                        </label>
+
+                        <textarea id="testimonial-message"
+                                  name="temoignage"
+                                  rows="6"
+                                  placeholder="Écrivez votre témoignage..."
+                                  required></textarea>
+
+                    </div>
+
+
+                    <!-- Autorisation -->
+                    <div class="form-group testimonial-consent">
+
+                        <label>
+
+                            <input type="checkbox"
+                                   name="autorisation"
+                                   value="Oui"
+                                   required>
+
+                            J'autorise DJ NAYVORA X à publier mon témoignage
+                            sur son site.
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Bouton -->
+                    <button type="submit"
+                            class="btn btn-hero btn-full">
+
+                        Envoyer mon témoignage
+
+                    </button>
+
+                </form>
+
+            </div>
+
         </div>
 
     </section>
