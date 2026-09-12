@@ -1,6 +1,6 @@
 /* ===== CSS VARIABLES ===== */
+/* Colors - HSL format */
 :root {
-    /* Colors - HSL format */
     --background: hsl(240, 10%, 5%);
     --foreground: hsl(0, 0%, 98%);
     
@@ -154,6 +154,21 @@ button {
     }
     50% {
         transform: translateY(-10px);
+    }
+}
+
+/* Animation de transition entre les deux photos du Hero */
+@keyframes heroPhotoFade {
+    0%, 40% {
+        opacity: 0;
+    }
+
+    50%, 90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
@@ -366,6 +381,20 @@ button {
     background-position: center 50%;
     background-repeat: no-repeat;
     z-index: 0;
+}
+
+/* Deuxième photo : transition douce en fondu */
+.hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('assets/DJ-Steeve-10.jpg');
+    background-size: contain;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: heroPhotoFade 10s ease-in-out infinite;
+    pointer-events: none;
 }
 
 .hero-overlay {
